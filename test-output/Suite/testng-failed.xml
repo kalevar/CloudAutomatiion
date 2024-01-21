@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="CloudAutomation.Cyfuture.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="CloudAutomation.Cyfuture.Updateprofile">
+        <methods>
+          <include name="EditProfile"/>
+          <include name="teardown"/>
+          <include name="UploadPhoto"/>
+          <include name="UpdateProfile"/>
+          <include name="Chengepassword"/>
+          <include name="openBrowser1"/>
+        </methods>
+      </class> <!-- CloudAutomation.Cyfuture.Updateprofile -->
+      <class name="CloudAutomation.Cyfuture.VerifyRegister">
+        <methods>
+          <include name="AlreadyRegistertoCloud"/>
+          <include name="RegistertoCloudBlankNameField"/>
+          <include name="RegisterwithlessthanlimitPassword"/>
+          <include name="teardown"/>
+          <include name="openBrowser"/>
+          <include name="RegistertoCloudNumericNameField"/>
+          <include name="RegistersamepasswordDataCloud"/>
+          <include name="RegistertoCloudBlankPhoneField"/>
+          <include name="RegistertoCloudBlankEmailField"/>
+          <include name="RegistertocorrectDataCloud"/>
+          <include name="RegistertomorethanlimitPhoneField"/>
+          <include name="RegistertoCloudBlankPasswordField"/>
+          <include name="RegistertoCloudBlankConfirmpasswodField"/>
+          <include name="RegistertoLessthanlimitPhoneField"/>
+          <include name="RegisterThroughGoogleCloud"/>
+          <include name="RegisterInvalidEmailDataCloud"/>
+          <include name="RegistertoBlankcountryField"/>
+          <include name="RegistertoChacterPhoneField"/>
+        </methods>
+      </class> <!-- CloudAutomation.Cyfuture.VerifyRegister -->
+      <class name="CloudAutomation.Cyfuture.ForgotpasswordTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="openBrowser"/>
+          <include name="RegisterEmail"/>
+          <include name="InvalidEmail1"/>
+          <include name="UnRegisterEmail"/>
+          <include name="InvalidEmail2"/>
+          <include name="InvalidEmail"/>
+        </methods>
+      </class> <!-- CloudAutomation.Cyfuture.ForgotpasswordTest -->
+      <class name="CloudAutomation.Cyfuture.Pay">
+        <methods>
+          <include name="PayCustomA"/>
+          <include name="paypalSelecta"/>
+          <include name="teardown"/>
+          <include name="CoupancreditCorrect"/>
+          <include name="Clouancreditincorrect"/>
+          <include name="Coupancreditalrady"/>
+          <include name="RozarCustomA"/>
+          <include name="openBrowser1"/>
+        </methods>
+      </class> <!-- CloudAutomation.Cyfuture.Pay -->
+      <class name="CloudAutomation.Cyfuture.VerifyLogin">
+        <methods>
+          <include name="LogintowithBlankdpassword"/>
+          <include name="teardown"/>
+          <include name="openBrowser"/>
+          <include name="chatbotpopup"/>
+        </methods>
+      </class> <!-- CloudAutomation.Cyfuture.VerifyLogin -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
